@@ -246,6 +246,10 @@ export default {
       {
         key: { address: 1 },
         name: 'contractVerificationAddressIndex'
+      },
+      {
+        key: { verificationId: 1 },
+        name: 'verificationIdIndex'
       }
     ]
   },
