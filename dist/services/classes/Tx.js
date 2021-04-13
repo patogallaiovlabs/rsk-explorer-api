@@ -163,6 +163,7 @@ class Tx extends _BcThing.BcThing {
 
   async decodeLogsAndAddresses(tx, { addressOptions } = {}) {
     try {
+      console.log(tx.hash);
       addressOptions = addressOptions || this.addressOptions();
       const { receipt } = tx;
       const logs = [...receipt.logs];
